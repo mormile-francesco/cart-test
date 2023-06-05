@@ -1,0 +1,12 @@
+---
+discounts:
+- type: FreeRule
+  product_code: GR1
+- type: ReducedPriceRule
+  product_code: SR1
+  min_units: 4
+  unit_price: 3.00
+- type: NotExistingRule
+  product_code: CF1
+  min_units: 5
+  percentage_discount: 30

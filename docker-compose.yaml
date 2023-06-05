@@ -1,0 +1,18 @@
+version: '3'
+services:
+  test-run:
+    build:
+      context: .
+    volumes:
+      - ${PWD}/results:/app/results
+  allure:
+    image: "frankescobar/allure-docker-service"
+    depends_on:
+      - test-run
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: 1
+      KEEP_HISTORY: 1
+    ports:
+      - "5050:5050"
+    volumes:
+      - ${PWD}/results:/app/allure-results

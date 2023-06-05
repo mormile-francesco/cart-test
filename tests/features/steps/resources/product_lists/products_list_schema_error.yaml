@@ -1,0 +1,11 @@
+---
+products:
+- product_code: GR1
+  price: 3.11
+- product_code: SR1
+  name: Strawberries
+  price: five
+- product_code: CF1
+  name: Coffee
+  price: 16.50
+

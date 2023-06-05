@@ -1,0 +1,10 @@
+---
+discounts:
+- type: FreeRule
+  product_code: GR1
+- type: ReducedPriceRule
+  product_code: SR1
+  min_units: 4
+  unit_price: 3.00
+- type: FreeRule
+  product_code: CF1
